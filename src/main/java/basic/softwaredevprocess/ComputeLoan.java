@@ -2,7 +2,7 @@ package basic.softwaredevprocess;
 
 import java.util.Scanner;
 
-public class ComputeLoan  {
+public class ComputeLoan {
 
   public static void main(String[] args) {
     // Create a Scanner
@@ -24,7 +24,9 @@ public class ComputeLoan  {
     double loanAmount = input.nextDouble();
 
     // Calculate payment
-    double monthlyPayment = loanAmount * monthlyInterestRate / (1 - 1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12));
+    double monthlyPayment =
+        loanAmount * monthlyInterestRate / (1 - 1 / Math.pow(1 + monthlyInterestRate,
+            numberOfYears * 12));
     double totalPayment = monthlyPayment * numberOfYears * 12;
 
     // Display results
@@ -32,6 +34,4 @@ public class ComputeLoan  {
     System.out.println("The total payment is $" + (int) (totalPayment * 100) / 100.0);
 
   }
-
-
 }
