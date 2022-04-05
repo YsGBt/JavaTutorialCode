@@ -25,6 +25,7 @@ public class FindFutureDate {
         "Today is " + findDate(todayDate) + " and the future day is " + findDate(futureDay));
   }
 
+  // Print the date based on the number given.
   private static String findDate(int date) {
     switch (date) {
       case 0:

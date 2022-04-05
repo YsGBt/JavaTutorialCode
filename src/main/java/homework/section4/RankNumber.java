@@ -4,7 +4,13 @@ import java.util.Scanner;
 
 public class RankNumber {
 
+  // Rank the three input numbers from low to high.
   public static void main(String[] args) {
+    int[] list = rankThree();
+    System.out.println("The rank is: " + list[0] + ", " + list[1] + ", " + list[2]);
+  }
+
+  public static int[] rankThree() {
     Scanner input = new Scanner(System.in);
     int one, two, three;
     System.out.print("Please input the first number: ");
@@ -29,7 +35,6 @@ public class RankNumber {
       two = three;
       three = temp;
     }
-
-    System.out.println("The rank is: " + one + ", " + two + ", " + three);
+    return new int[]{one, two, three};
   }
 }

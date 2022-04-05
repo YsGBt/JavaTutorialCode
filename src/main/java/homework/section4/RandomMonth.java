@@ -2,6 +2,7 @@ package homework.section4;
 
 import java.util.Random;
 
+// Generate a random number between 1-12 (inclusive), and print the corresponding month based on the number generated.
 public class RandomMonth {
 
   public static void main(String[] args) {
