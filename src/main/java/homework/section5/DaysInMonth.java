@@ -2,7 +2,6 @@ package homework.section5;
 
 import java.time.Month;
 import java.time.YearMonth;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class DaysInMonth {
